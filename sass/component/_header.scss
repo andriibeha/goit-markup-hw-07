@@ -1,5 +1,15 @@
+/*Main-Nav*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: 93px;
+}
+
 /*Logo*/
-.logo {
+.main-nav__logo {
   color: $title-text-color;
   font-family: "Roboto";
   font-weight: 700;
@@ -9,14 +19,14 @@
   text-decoration: none;
 }
 
-.logo > span {
+.main-nav__logo-title {
   color: $accent-color;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
 /*Header*/
-.site-nav .link {
+.site-nav__link {
   color: $title-text-color;
 
   font-weight: 500;
@@ -24,8 +34,8 @@
   line-height: 1.2;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: $accent-color;
 
   transition-duration: 250ms;
@@ -37,11 +47,11 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav .item {
+.site-nav__item {
   position: relative;
 }
 
-.site-nav .link::after {
+.site-nav__link::after {
   content: "";
   position: absolute;
   bottom: -28px;
@@ -54,17 +64,17 @@ header {
   opacity: 0;
 }
 
-.site-nav .link:hover::after,
-.site-nav .link:focus::after {
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
   opacity: 1;
 }
 
-.site-nav .link.current {
+.site-nav__current {
   color: $accent-color;
 }
 
-.site-nav .link.current::after,
-.site-nav .link.current::after {
+.site-nav__current::after,
+.site-nav__current::after {
   opacity: 1;
 }
 
@@ -72,16 +82,16 @@ header {
   display: flex;
 }
 
-.site-nav .item {
+.site-nav__item {
   margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.site-nav__item:last-child {
   margin-right: 0px;
 }
 
 /*Auth-nav*/
-.auth-nav .link {
+.auth-nav__link {
   color: $primary-text-color;
 
   font-weight: 500;
@@ -89,8 +99,8 @@ header {
   line-height: 1.2;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: $accent-color;
 
   transition-duration: 250ms;
@@ -105,16 +115,16 @@ header {
   margin-left: auto;
 }
 
-.auth-nav .item {
+.auth-nav__item {
   margin-right: 30px;
 }
 
-.auth-nav .item:last-child {
+.auth-nav__item:last-child {
   margin-right: 0px;
 }
 
 /*Рівняю телефоні текст*/
-.auth-nav .link {
+.auth-nav__link {
   display: flex;
   align-items: center;
 }
@@ -132,37 +142,27 @@ header {
   display: flex;
 }
 
-/*Main-Nav*/
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav .logo {
-  margin-right: 93px;
-}
-
 /*Оформлення іконок SVG*/
-.auth-nav .icon {
-  fill: var(--primary-text-color);
+.auth-nav__icon {
+  fill: $primary-text-color;
 }
-.auth-nav .icon-email {
+.auth-nav__icon-email {
   width: 16px;
   height: 12px;
 
   margin-right: 10px;
 }
 
-.auth-nav .icon-phone {
+.auth-nav__icon-phone {
   width: 10px;
   height: 16px;
 
   margin-right: 10px;
 }
 
-.auth-nav .link:hover .icon,
-.auth-nav .link:focus .icon {
-  fill: var(--accent-color);
+.auth-nav__link:hover .icon,
+.auth-nav__link:focus .icon {
+  fill: $accent-color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
