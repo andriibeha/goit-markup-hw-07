@@ -1,0 +1,61 @@
+/*Clients*/
+.clients .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.clients {
+  padding-top: 91px;
+  padding-bottom: 94px;
+}
+
+.clients-logo {
+  display: flex;
+}
+
+.clients-logo .logo {
+  width: 106px;
+  height: 60px;
+}
+
+.logo {
+  fill: $primary-icon-color;
+}
+
+.clients-logo .link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $primary-icon-color;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-logo .link:hover .logo,
+.clients-logo .link:focus .logo {
+  fill: $accent-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo .link:hover,
+.clients-logo .link:focus {
+  border-color: $accent-color;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-logo a {
+  margin-right: 30px;
+}
+
+.clients-logo a:last-child {
+  margin-right: 0px;
+}
