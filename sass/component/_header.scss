@@ -160,8 +160,8 @@ header {
   margin-right: 10px;
 }
 
-.auth-nav__link:hover .icon,
-.auth-nav__link:focus .icon {
+.auth-nav__link:hover .auth-nav__icon,
+.auth-nav__link:focus .auth-nav__icon {
   fill: $accent-color;
 
   transition-duration: 250ms;

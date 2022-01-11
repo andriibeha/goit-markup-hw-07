@@ -1,40 +1,35 @@
 /*What We Do*/
-.whatwedo .title,
-.team .team-title {
+.whatwedo--title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
 
-.whatwedo .title {
   margin-bottom: 50px;
 }
 
-.whatwedo-list {
+.whatwedo--list {
   display: flex;
 }
 
-.whatwedo-list .item {
+.whatwedo--item {
   margin-right: 30px;
+
+  position: relative;
 }
 
-.whatwedo-list .item:last-child {
+.whatwedo--item:last-child {
   margin-right: 0px;
 }
 
 /*Label*/
-.whatwedo-list .label-title {
+.whatwedo--list .label--title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: $primary-white-color;
 }
 
-.whatwedo-list .item {
-  position: relative;
-}
-
-.whatwedo-list .label {
+.whatwedo--list .label {
   display: flex;
   align-items: center;
   justify-content: center;

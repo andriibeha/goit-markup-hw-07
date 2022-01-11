@@ -1,5 +1,5 @@
 /*Clients*/
-.clients .title {
+.clients--title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -12,11 +12,11 @@
   padding-bottom: 94px;
 }
 
-.clients-logo {
+.clients--logo {
   display: flex;
 }
 
-.clients-logo .logo {
+.clients--logo .logo {
   width: 106px;
   height: 60px;
 }
@@ -25,7 +25,7 @@
   fill: $primary-icon-color;
 }
 
-.clients-logo .link {
+.clients--link {
   width: 170px;
   height: 92px;
   border: 1px solid $primary-icon-color;
@@ -36,26 +36,26 @@
   align-items: center;
 }
 
-.clients-logo .link:hover .logo,
-.clients-logo .link:focus .logo {
+.clients--logo .link:hover .logo,
+.clients--logo .link:focus .logo {
   fill: $accent-color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo .link:hover,
-.clients-logo .link:focus {
+.clients--logo .link:hover,
+.clients--logo .link:focus {
   border-color: $accent-color;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-logo a {
+.clients--logo a {
   margin-right: 30px;
 }
 
-.clients-logo a:last-child {
+.clients--logo a:last-child {
   margin-right: 0px;
 }

@@ -1,23 +1,31 @@
 /*Team*/
-.team-list .title {
+.team--title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.team--list .team--title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
+  text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team {
   background-color: $secondary-bg-color;
 }
 
-.team-title {
-  margin-bottom: 50px;
-}
-
-.team-list {
+.team--list {
   display: flex;
 }
 
-.team-list .item {
+.team--item {
   margin-right: 30px;
 
   background-color: #fff;
@@ -27,25 +35,17 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item:last-child {
+.team--item:last-child {
   margin-right: 0px;
 }
 
-.team-list .title {
+.team--text {
   text-align: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
-.team-list .text {
-  text-align: center;
-}
-
-.team-item-wraper {
+.team--item-wraper {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team-list .text {
-  margin-bottom: 16px;
 }

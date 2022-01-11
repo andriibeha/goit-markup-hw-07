@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!--Шапка Сайта-->
@@ -56,28 +56,28 @@
             <h1 class="title primary-title">Меню Категорій</h1>
             <ul class="categories list">
                 <!--Можливо не потрібно але я залишу тут-->
-                <li class="item">
-                    <button type="button" class="button secondary">
+                <li class="categories--item">
+                    <button type="button" class="button button--secondary">
                         Все
                     </button>
                 </li>
-                <li class="item">
-                    <button type="button" class="button secondary">
+                <li class="categories--item">
+                    <button type="button" class="button button--secondary">
                         Веб-сайты
                     </button>
                 </li>
-                <li class="item">
-                    <button type="button" class="button secondary">
+                <li class="categories--item">
+                    <button type="button" class="button button--secondary">
                         Приложения
                     </button>
                 </li>
-                <li class="item">
-                    <button type="button" class="button secondary">
+                <li class="categories--item">
+                    <button type="button" class="button button--secondary">
                         Дизайн
                     </button>
                 </li>
-                <li class="item">
-                    <button type="button" class="button secondary">
+                <li class="categories--item">
+                    <button type="button" class="button button--secondary">
                         Маркетинг
                     </button>
                 </li>
@@ -88,7 +88,7 @@
         <!--Список Фото-Опис-->
         <div class="container cards-description">
             <ul class="cards list">
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                         <div class="card-label">
                             <img src="./images/portfolio/01.jpg" alt="Laptop" width="370">
@@ -105,7 +105,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                         <div class="card-label">
                             <img src="./images/portfolio/02.jpg" alt="Два парня играют в баскетбол" width="370">
@@ -122,7 +122,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     <div class="card-label">
                         <img src="./images/portfolio/03.jpg" alt="Изображения рибы" width="370">
@@ -139,7 +139,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     
                         <div class="card-label">
@@ -157,7 +157,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     <div class="card-label">
                             <img src="./images/portfolio/05.jpg" alt="Две коробкы" width="370">
@@ -174,7 +174,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     <div class="card-label">
                             <img src="./images/portfolio/06.jpg" alt="Екран макбука" width="370">
@@ -190,7 +190,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                         <div class="card-label">
                             <img src="./images/portfolio/07.jpg" alt="Книга" width="370">
@@ -207,7 +207,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     <div class="card-label">
                             <img src="./images/portfolio/08.jpg" alt="Картка бренда" width="370">
@@ -223,7 +223,7 @@
                     </div>
                     </a>
                 </li>
-                <li class="item">
+                <li class="cards--item">
                     <a href="" class="card-link link">
                     <div class="card-label">
                             <img src="./images/portfolio/09.jpg" alt="Печатает на ноутбуке" width="370">
@@ -252,8 +252,8 @@
     <footer class="footer">
         <div class="container">
             <div class="logo-address">
-                <a href="./index.html" class="logo">
-                    <span class="logo-title">Web</span>Studio
+                <a href="./index.html" class="main-nav__logo">
+                    <span class="main-nav__logo-title">Web</span>Studio
                 </a>
     
                 <address class="foot">
@@ -303,7 +303,7 @@
                 <form name="signup" class="signup">
                     <input type="email" name="email" placeholder="E-mail">
             
-                    <button class="button primary" type="submit">
+                    <button class="button button--primary" type="submit">
                         Подписаться
                         <svg class="icon">
                             <use href="./images/symbol-defs.svg#telegram"></use>

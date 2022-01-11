@@ -9,19 +9,19 @@
   text-decoration: none;
 }
 
-.button.primary {
+.button--primary {
   background-color: $accent-color;
   padding: 10px 32px;
 }
 
-.button.primary:hover {
+.button--primary:hover {
   cursor: pointer;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button.primary {
+.button--primary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -32,7 +32,7 @@ button {
 }
 
 /*Оформляю кнопку другорядну*/
-.button.secondary {
+.button--secondary {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
@@ -41,8 +41,8 @@ button {
   color: $title-text-color;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button--secondary:hover,
+.button--secondary:focus {
   background-color: $accent-color;
   color: $primary-white-color;
 

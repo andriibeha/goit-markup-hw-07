@@ -1,5 +1,5 @@
 /*Description*/
-.description .title {
+.description--title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -9,25 +9,25 @@
   padding-bottom: 0px;
 }
 
-.description-list > li {
+.description--item {
   text-decoration: none;
 }
 
-.description-list {
+.description--list {
   display: flex;
 }
 
-.description-list .title {
+.description--title {
   margin-bottom: 10px;
 }
 
-.description-list .item {
+.description--item {
   margin-right: 30px;
 
   max-width: 270px;
 }
 
-.description-list .item:last-child {
+.description--item:last-child {
   margin-right: 0px;
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: 30px;
 }
 
-.des-label .icon {
+.des-label--icon {
   width: 70px;
   height: 70px;
   position: relative;
