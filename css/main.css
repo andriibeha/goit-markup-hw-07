@@ -216,22 +216,12 @@ button {
   line-height: 1.2;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*Роблю лінію під текстом*/
-header {
-  border-bottom: 1px solid #ececec;
-}
-
-.site-nav__item {
-  position: relative;
 }
 
 .site-nav__link::after {
@@ -245,17 +235,24 @@ header {
   opacity: 0;
 }
 
-.site-nav__link:hover::after,
-.site-nav__link:focus::after {
+.site-nav__link:hover::after, .site-nav__link:focus::after {
   opacity: 1;
+}
+
+/*Роблю лінію під текстом*/
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav__item {
+  position: relative;
 }
 
 .site-nav__current {
   color: #2196f3;
 }
 
-.site-nav__current::after,
-.site-nav__current::after {
+.site-nav__current::after, .site-nav__current::after {
   opacity: 1;
 }
 
@@ -281,8 +278,7 @@ header {
   line-height: 1.2;
 }
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+.auth-nav__link:hover, .auth-nav__link:focus {
   color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -306,16 +302,6 @@ header {
 
 .auth-nav__item:last-child {
   margin-right: 0px;
-}
-
-/*Рівняю телефоні текст*/
-.auth-nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*Page Header*/
@@ -351,6 +337,16 @@ header {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+/*Рівняю телефоні текст*/
+.auth-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .auth-nav__link:hover .auth-nav__icon,
@@ -446,12 +442,6 @@ header {
   margin-bottom: 50px;
 }
 
-.whatwedo--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .whatwedo--item {
   margin-right: 30px;
   position: relative;
@@ -462,6 +452,12 @@ header {
 }
 
 /*Label*/
+.whatwedo--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .whatwedo--list .label--title {
   font-size: 14px;
   line-height: 1.14;
@@ -547,17 +543,6 @@ header {
   padding-bottom: 94px;
 }
 
-.clients--logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.clients--logo .logo {
-  width: 106px;
-  height: 60px;
-}
-
 .logo {
   fill: #afb1b8;
 }
@@ -578,13 +563,24 @@ header {
           align-items: center;
 }
 
-.clients--logo .link:hover .logo,
-.clients--logo .link:focus .logo {
+.clients--link:hover .logo,
+.clients--link:focus .logo {
   fill: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients--logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients--logo .logo {
+  width: 106px;
+  height: 60px;
 }
 
 .clients--logo .link:hover,
@@ -824,6 +820,11 @@ header {
 }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: -30px;
 }
 
@@ -833,14 +834,6 @@ header {
 
 .categories--item:last-child {
   margin-right: 0px;
-}
-
-.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .cards--item {
@@ -924,6 +917,7 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer .link:hover, .footer .link:focus,
 .footer .link:hover,
 .footer .link:focus {
   color: #2196f3;
@@ -1038,6 +1032,7 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,17 +1045,12 @@ header {
           align-items: center;
 }
 
-.join a:hover,
-.join a:focus {
+.join a:hover, .join a:focus {
   background-color: #2196f3;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join a {
-  margin-right: 10px;
 }
 
 .join a:last-child {

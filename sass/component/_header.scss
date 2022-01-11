@@ -32,14 +32,32 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+
+    width: 100%;
+    border: 2px solid $before-element-is;
+    border-radius: 2px;
+
+    opacity: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 }
 
 /*Роблю лінію під текстом*/
@@ -51,31 +69,13 @@ header {
   position: relative;
 }
 
-.site-nav__link::after {
-  content: "";
-  position: absolute;
-  bottom: -28px;
-  left: 0;
-
-  width: 100%;
-  border: 2px solid $before-element-is;
-  border-radius: 2px;
-
-  opacity: 0;
-}
-
-.site-nav__link:hover::after,
-.site-nav__link:focus::after {
-  opacity: 1;
-}
-
 .site-nav__current {
   color: $accent-color;
-}
 
-.site-nav__current::after,
-.site-nav__current::after {
-  opacity: 1;
+  &::after,
+  &::after {
+    opacity: 1;
+  }
 }
 
 .site-nav {
@@ -97,14 +97,14 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-}
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .auth-nav {
@@ -117,16 +117,10 @@ header {
 
 .auth-nav__item {
   margin-right: 30px;
-}
 
-.auth-nav__item:last-child {
-  margin-right: 0px;
-}
-
-/*Рівняю телефоні текст*/
-.auth-nav__link {
-  display: flex;
-  align-items: center;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 /*Page Header*/
@@ -160,10 +154,16 @@ header {
   margin-right: 10px;
 }
 
-.auth-nav__link:hover .auth-nav__icon,
-.auth-nav__link:focus .auth-nav__icon {
-  fill: $accent-color;
+/*Рівняю телефоні текст*/
+.auth-nav__link {
+  display: flex;
+  align-items: center;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .auth-nav__icon,
+  &:focus .auth-nav__icon {
+    fill: $accent-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

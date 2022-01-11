@@ -2,14 +2,14 @@
 .footer .link,
 .footer .link {
   color: $footer-address-color;
-}
 
-.footer .link:hover,
-.footer .link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .footer-address,
@@ -114,27 +114,25 @@
   height: 44px;
   border-radius: 50%;
 
+  margin-right: 10px;
+
   background-color: $secondary-icon-color;
 
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.join a:hover,
-.join a:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.join a {
-  margin-right: 10px;
-}
-
-.join a:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .footer .join {

@@ -25,10 +25,10 @@
   margin-right: 30px;
 
   max-width: 270px;
-}
 
-.description--item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 /*Description Label*/
